@@ -1,0 +1,11 @@
+<!-- 歌单组件 -->
+<view class="content">
+    <area-header title="{{ title }}" bind:clickMore="skipMoreSong"></area-header>
+    <scroll-view class="box" scroll-x enable-flex style="width:{{ screenWidth }}px;">
+        <block wx:for="{{ songList }}" wx:key="id">
+            <view class="list">
+                <menu-item itemData="{{ item }}"></menu-item>
+            </view>
+        </block>
+    </scroll-view>
+</view>

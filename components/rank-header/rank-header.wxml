@@ -1,0 +1,23 @@
+<!--components/rank-header/rank-header.wxml-->
+<view class="content">
+    <image class="bg-image" mode="aspectFill" src="{{ itemData.coverImgUrl }}"/>
+    <view class="box">
+        <view class="info">
+            <image class="image" src="{{ itemData.coverImgUrl }}"/>
+            <view class="detail">
+                <view class="name">{{ itemData.name }}</view>
+                <view class="description">简介：{{ itemData.description }}</view>
+            </view>
+        </view>
+        <view class="interact">
+            <view class="like">
+                <van-icon name="like-o" style="padding: 0 8rpx;"/>
+                <text>{{ itemData.playCount }}</text>
+            </view>
+            <view class="share">
+                <van-icon name="share-o" style="padding: 0 8rpx;"/>
+                <text>分享</text>
+            </view>
+        </view>
+    </view>
+</view>

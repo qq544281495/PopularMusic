@@ -1,0 +1,57 @@
+/* pages/movie-detail/movie-detail.wxss */
+.movie{
+    width: 100%;
+}
+.scroll-box{
+    height: calc(100vh - 230px);
+}
+.content{
+    padding: 20rpx;
+    line-height: 54rpx;
+    font-size: 12px;
+    color: #888;
+}
+.content .title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.related{
+    padding: 20rpx;
+}
+
+.related .item{
+    display: flex;
+    padding: 20rpx 0;
+}
+.related .item .image-box{
+    position: relative;
+    width: 40%;
+    border-radius: 16rpx;
+}
+.related .item .image-box .play{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 24rpx;
+    padding: 8rpx;
+}
+.related .item .image-box .play .play-icon{
+    height: 24rpx;
+    margin-right: 4rpx;
+}
+.related .item .image-box .image{
+    width: 100%;
+    border-radius: 8rpx;
+}
+.related .item .message{
+    box-sizing: border-box;
+    width: 60%;
+    padding: 0 16rpx;
+    font-size: 28rpx;
+    line-height: 42rpx;
+}
+

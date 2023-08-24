@@ -1,0 +1,8 @@
+<!--pages/movie/movie.wxml-->
+<view class="movieList">
+    <block wx:for="{{ movieList }}" wx:key="id">
+        <movie-item class="movie" itemData="{{ item }}"></movie-item>
+    </block>
+</view>
+
+

@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/musique/musique",
+    "pages/movie/movie"
+  ],
+  "subPackages": [
+      {
+          "root": "packageMusic",
+          "name": "music",
+          "pages": [
+            "pages/song-rank/song-rank",
+            "pages/song-menu/song-menu",
+            "pages/song-play/song-play"
+          ]
+      },
+      {
+          "root": "packageVideo",
+          "name": "video",
+          "pages": [
+            "pages/movie-detail/movie-detail"
+          ]
+      }
+  ],
+  "preloadRule": {
+      "pages/musique/musique": {
+          "network": "all",
+          "packages": ["packageMusic"]
+      },
+      "pages/movie/movie": {
+          "network": "all",
+          "packages": ["packageVideo"]
+      }
+  },
+  "window":{
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "风行音乐",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+      "list": [
+          {
+              "pagePath": "pages/musique/musique",
+              "text": "音乐",
+              "iconPath": "assets/images/tabbar/music_normal.png",
+              "selectedIconPath": "assets/images/tabbar/music_active.png"
+          },
+          {
+            "pagePath": "pages/movie/movie",
+            "text": "视频",
+            "iconPath": "assets/images/tabbar/video_normal.png",
+            "selectedIconPath": "assets/images/tabbar/video_active.png"
+          }
+      ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

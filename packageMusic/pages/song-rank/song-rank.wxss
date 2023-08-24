@@ -1,0 +1,15 @@
+/* pages/rank-detail/rank-detail.wxss */
+.content{
+    padding-bottom:  4rpx;
+}
+
+.content .title{
+    margin-bottom: 20rpx;
+    font-size: 40rpx;
+    font-weight: 700;
+    padding: 0 24rpx;
+}
+
+.content .song-list{
+    padding: 0 24rpx;
+}

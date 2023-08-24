@@ -1,0 +1,46 @@
+/* components/rank-area/rank-area.wxss */
+.content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(200, 200, 200, 0.1);
+    border-radius: 8rpx;
+    margin-bottom: 16rpx;
+}
+
+.content .song{
+    box-sizing: border-box;
+    padding: 16rpx 8rpx;
+    font-size: 28rpx;
+}
+
+.content .song .name{
+    font-size: 32rpx;
+    font-weight: 700;
+    margin-bottom: 16rpx;
+}
+
+.content .song .list .item{
+    margin-bottom: 8rpx;
+}
+
+.content .info{
+    position: relative;
+}
+
+.content .info .play{
+    position: absolute;
+    padding: 0 8rpx;
+    background-color: rgba(80, 80, 80, 0.4);
+    right: 0;
+    bottom: 0rpx;
+    color: #ffffff;
+    font-size: 24rpx;
+    border-radius: 8rpx;
+}
+
+.content .info .image{
+    width: 228rpx;
+    height: 100%;
+    border-radius: 0 8rpx 8rpx 0;
+}

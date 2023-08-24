@@ -1,0 +1,13 @@
+<!--推荐歌曲组件-->
+<view class="content" bind:tap="skipPlay">
+    <image class="image" src="{{ itemData.al.picUrl }}"></image>
+    <view class="info">
+        <view class="name">
+            <view class="song">{{ itemData.name }}</view>
+            <view class="artist">{{ itemData.ar[0].name }}</view>
+        </view>
+        <view class="skip">
+            <van-icon name="arrow" />
+        </view>
+    </view>
+</view>

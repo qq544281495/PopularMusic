@@ -1,0 +1,15 @@
+<!--components/movie-item/movie-item.wxml-->
+<wxs src="/utils/format.wxs" module="format"></wxs>
+<view class="item" bind:tap="skipDetail">
+    <view class="preview">
+        <image class="image" src="{{ itemData.cover }}" mode="widthFix"></image>
+        <view class="data">
+            <view class="play">
+                <image class="play-icon" mode="heightFix" src="/assets/images/icons/play_icon.png"></image>
+                <text>{{ format.formatNumber(itemData.playCount) }}</text>
+            </view>
+            <view class="tiem">{{ format.formatTime(itemData.mv.videos[0].duration) }}</view>
+        </view>
+    </view>
+    <view class="content">{{ itemData.name }} - {{ itemData.artistName }}</view>
+</view>

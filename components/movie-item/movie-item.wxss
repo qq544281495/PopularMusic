@@ -1,0 +1,50 @@
+/* components/movie-item/movie-item.wxss */
+.item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16rpx;
+}
+
+.preview{
+    position: relative;
+    width: 100%;
+    color: #fff;
+    font-size: 24rpx;
+}
+
+.preview .image{
+    position: relative;
+    width: 100%;
+    border-radius: 8rpx;
+}
+
+.preview .data{
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12rpx 8rpx;
+}
+
+.preview .data .play{
+    display: flex;
+    align-items: center;
+}
+
+.preview .data .play .play-icon{
+    height: 28rpx;
+    margin-right: 4rpx;
+}
+
+.content{
+    margin: 12rpx 0;
+    font-size: 28rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

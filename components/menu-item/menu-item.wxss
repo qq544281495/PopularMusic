@@ -1,0 +1,38 @@
+/* components/song-list/song-list.wxss */
+.content{
+    position: relative;
+    width: 100%;
+}
+
+.content .image-box{
+    position: relative;
+    width: 100%;
+}
+
+.content .image{
+    width: 100%;
+    border-radius: 8rpx;
+}
+
+.content .play{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 8rpx;
+    right: 0rpx;
+    padding: 4rpx 8rpx;
+    color: #fff;
+    background-color: rgba(80, 80, 80, 0.4);
+    font-size: 24rpx;
+    border-radius: 8rpx;
+}
+
+.content .name{
+    white-space: normal;
+    width: 100%;
+    font-size: 28rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

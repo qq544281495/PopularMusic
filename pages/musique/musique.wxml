@@ -1,0 +1,34 @@
+<!-- 搜索框 -->
+<van-search
+  value="{{ search }}"
+  shape="round"
+  background="#fff"
+  placeholder="搜索你喜欢的歌曲"
+/>
+<!-- 轮播图 -->
+<swiper wx:if="{{ banners.length }}" class="banner" indicator-dots circular style="height: {{ bannerHeight }}px;">
+    <block wx:for="{{ banners }}" wx:key="targetId">
+        <swiper-item class="item">
+            <image src="{{ item.imageUrl }}" mode="widthFix" class="banner-image" bindload="getElementInfo"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<!-- 热门歌单 -->
+<song-area wx:if="{{ hotSongList.length }}" title="热门歌单" songList="{{ hotSongList }}"></song-area>
+<!-- 巅峰榜 -->
+<view class="rank" wx:if="{{ isRankData }}">
+    <area-header title="巅峰榜" hasMore="{{ false }}"></area-header>
+    <view class="rank-list">
+        <block wx:for="{{ rankSongInfo }}" wx:key="id">
+            <rank-area itemData="{{ item }}" key="{{ index }}"></rank-area>
+        </block>
+    </view>
+</view>
+<!-- 推荐歌曲 -->
+<view class="recommend" wx:if="{{ recommendList.length }}">
+    <area-header title="推荐歌曲" bind:clickMore="skipRecommendMore"></area-header>
+    <block wx:for="{{ recommendList }}" wx:key="id">
+        <song-item itemData="{{ item }}" bind:tap="saveSongList" data-index="{{ index }}"></song-item>
+    </block>
+</view>
+

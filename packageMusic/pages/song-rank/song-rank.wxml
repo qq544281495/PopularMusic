@@ -1,0 +1,12 @@
+<!--pages/rank-detail/rank-detail.wxml-->
+<view class="content">
+    <view wx:if="{{type === 'menu'}}" class="header">
+        <rank-header itemData="{{ rankSong }}"></rank-header>
+    </view>
+    <view wx:else class="title">{{ rankSong.name }}</view>
+    <view class="song-list">
+        <block wx:for="{{ rankSong.tracks }}" wx:key="id">
+            <song-item itemData="{{ item }}" bind:tap="saveSongList" data-index="{{ index }}"></song-item>
+        </block>
+    </view>
+</view>

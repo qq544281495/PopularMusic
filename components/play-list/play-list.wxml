@@ -1,0 +1,19 @@
+<!--components/play-list/play-list.wxml-->
+<view class="content" style="visibility: {{ show ? 'inherit' : 'hidden' }}">
+    <!-- 遮罩层 -->
+    <view class="shade" bind:tap="changeShow"></view>
+    <!-- 歌曲列表 -->
+    <view class="song, {{ show ? 'show' : 'hide' }}">
+        <view class="head">
+            <view class="title">歌曲列表</view>
+        </view>
+        <scroll-view scroll-y class="list">
+            <view wx:for="{{ songList }}" wx:key="*this" class="item" bind:tap="changeCurrentSong" data-index="{{ index }}">
+                <view class="info">
+                    <text class="name" style="color: {{ index === currentSongIndex ? 'red' : '' }}">{{ item.name }}</text>
+                    <text class="singer" style="color: {{ index === currentSongIndex ? 'red' : '#ccc' }}">{{ item.ar[0].name }}</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

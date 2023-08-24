@@ -1,0 +1,11 @@
+/* pages/movie/movie.wxss */
+.movieList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 8rpx;
+}
+
+.movie{
+    width: 46%;
+}

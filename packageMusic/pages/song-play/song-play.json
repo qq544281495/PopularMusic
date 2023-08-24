@@ -1,0 +1,9 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "play-nav": "/components/play-nav/play-nav",
+        "van-icon": "@vant/weapp/icon/index",
+        "play-list": "/components/play-list/play-list"
+    }
+}

@@ -1,0 +1,19 @@
+<!--components/rank-area/rank-area.wxml-->
+<wxs src="/utils/format.wxs" module="format"></wxs>
+<view class="content" bind:tap="skipRankPage">
+    <view class="song">
+        <view class="name">{{ itemData.name }}</view>
+        <view class="list">
+            <block wx:for="{{ 3 }}" wx:key="*this">
+                <view class="item">
+                    <text>{{ item + 1 }}. </text>
+                    <text>{{ itemData.tracks[item].name }}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="info">
+        <image class="image" src="{{ itemData.coverImgUrl }}"/>
+        <view class="play">{{ format.formatNumber(itemData.playCount) }}</view>
+    </view>
+</view>

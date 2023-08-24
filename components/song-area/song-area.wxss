@@ -1,0 +1,15 @@
+/* components/song-area/song-area.wxss */
+.content .box {
+    white-space: nowrap;
+    box-sizing: border-box;
+    margin-left: -24rpx;
+    padding-left: 24rpx;
+}
+
+.content .box .list{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 180rpx;
+    margin-right: 24rpx;
+}

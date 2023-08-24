@@ -1,0 +1,15 @@
+/* pages/song-menu/song-menu.wxss */
+.content{
+    padding: 0 24rpx;
+}
+
+.content .box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content .box .list {
+    width: 48%;
+    margin-bottom: 16rpx;
+}

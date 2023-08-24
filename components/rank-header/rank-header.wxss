@@ -1,0 +1,72 @@
+/* components/rank-header/rank-header.wxss */
+.content{
+    position: relative;
+    width: 100%;
+    margin-bottom: 24rpx;
+}
+
+.content .bg-image{
+    width: 100%;
+    filter: blur(4rpx);
+}
+
+.content .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box .info{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20rpx;
+    padding: 20rpx 0;
+}
+
+.info .image{
+    flex-shrink: 0;
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 16rpx;
+}
+
+.info .detail{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 400rpx;
+    color: #fff;
+}
+
+.detail .description{
+    font-size: 24rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.content .interact{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 600rpx;
+    color: #fff;
+    text-align: center;
+}
+
+.interact .like{
+    flex: 1;
+}
+
+.interact .share{
+    flex: 1;
+}

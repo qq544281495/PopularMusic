@@ -1,0 +1,28 @@
+// 数值格式化
+function formatNumber(number){
+    number = Number(number);
+    if(number >= 100000000){
+        return (number / 100000000).toFixed(1) + "亿";
+    }else if(number >= 10000){
+        return (number / 10000).toFixed(1) + "万";
+    }else{
+        return number;
+    }
+}
+// 时间格式填充
+function fillTime(time){
+    time = time + "";
+    return ("00" + time).slice(time.length);
+}
+// 播放时长格式化
+function formatTime(time){
+    time = time / 1000;
+    var minute = Math.floor(time / 60);
+    var second = Math.floor(time % 60);
+    return fillTime(minute) + ":" + fillTime(second);
+}
+
+module.exports = {
+    formatNumber: formatNumber,
+    formatTime: formatTime
+}

@@ -1,0 +1,9 @@
+<!--歌单子项组件-->
+<wxs src="/utils/format.wxs" module="format"></wxs>
+<view class="content" bind:tap="skipSongRank">
+    <view class="image-box">
+        <image class="image" src="{{ itemData.coverImgUrl }}" mode="widthFix"></image>
+        <view class="play">{{ format.formatNumber(itemData.playCount) }}</view>
+    </view>
+    <view class="name">{{ itemData.name }}</view>
+</view>
